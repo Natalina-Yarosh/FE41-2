@@ -96,14 +96,7 @@ body::before {
 .header__flex {
   display: flex;
   align-items: center;
-  -moz-column-gap: 77px;
-       column-gap: 77px;
-}
-@media (max-width: 1440px) {
-  .header__flex {
-    -moz-column-gap: 55px;
-         column-gap: 55px;
-  }
+  justify-content: space-between;
 }
 .header__links {
   font-family: "AvantGarde";
@@ -119,6 +112,12 @@ body::before {
     line-height: 22px;
   }
 }
+@media (max-width: 1033px) {
+  .header__links {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
 .header__links_icon:hover {
   color: #ED8E00;
 }
@@ -126,6 +125,12 @@ body::before {
   .header__links_icon {
     width: 44px;
     height: 44px;
+  }
+}
+@media (max-width: 1033px) {
+  .header__links_icon {
+    width: 30px;
+    height: 20px;
   }
 }
 .header__links_icon-343 {
@@ -173,6 +178,12 @@ body::before {
     height: 20px;
   }
 }
+@media (max-width: 1033px) {
+  .header__search_icon {
+    width: 15px;
+    height: 15px;
+  }
+}
 @media (max-width: 1440px) {
   .header__search {
     height: 35px;
@@ -181,6 +192,13 @@ body::before {
 @media (max-width: 768px) {
   .header__search {
     height: 31px;
+    width: 100%;
+  }
+}
+@media (max-width: 1033px) {
+  .header__search {
+    height: 25px;
+    width: 100%;
   }
 }
 .header__search::-moz-placeholder {
@@ -213,6 +231,20 @@ body::before {
   .header__search::placeholder {
     font-size: 14px;
     line-height: 16px;
+  }
+}
+@media (max-width: 1033px) {
+  .header__search::-moz-placeholder {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .header__search:-ms-input-placeholder {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .header__search::placeholder {
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 @media (max-width: 768px) {
@@ -249,6 +281,16 @@ body::before {
     -moz-column-gap: 12px;
          column-gap: 12px;
     border-radius: 18.712px;
+  }
+}
+@media (max-width: 1033px) {
+  .header__search_wrapper {
+    max-width: 100px;
+  }
+}
+@media (max-width: 1033px) {
+  .header__search_wrapper {
+    max-width: 312px;
   }
 }
 
@@ -438,6 +480,24 @@ body::before {
     justify-content: space-between;
     padding-bottom: 26px;
   }
+}
+.banner__img_cont::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.banner__img_cont {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.banner__img {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
 }
 
 .header__768px {
