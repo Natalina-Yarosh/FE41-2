@@ -149,6 +149,12 @@ body::before {
     height: 54px;
   }
 }
+@media (max-width: 836px) {
+  .header__links_icon-343 {
+    max-width: 200px;
+    max-height: 100px;
+  }
+}
 .header__links_icons {
   display: flex;
   -moz-column-gap: 30px;
@@ -156,8 +162,8 @@ body::before {
 }
 @media (max-width: 1440px) {
   .header__links_icons {
-    -moz-column-gap: 21px;
-         column-gap: 21px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
 }
 .header__search {
@@ -285,12 +291,13 @@ body::before {
 }
 @media (max-width: 1033px) {
   .header__search_wrapper {
-    max-width: 100px;
+    max-width: 150px;
+    width: auto;
   }
 }
-@media (max-width: 1033px) {
+@media (max-width: 836px) {
   .header__search_wrapper {
-    max-width: 312px;
+    max-width: 120px;
   }
 }
 
@@ -391,10 +398,6 @@ body::before {
     width: 100%;
   }
 }
-.banner__img {
-  max-width: 267px;
-  max-height: 245px;
-}
 @media (max-width: 1440px) {
   .banner__img {
     max-width: 208px;
@@ -449,12 +452,11 @@ body::before {
   }
 }
 .banner__imgflex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   -moz-column-gap: 60px;
        column-gap: 60px;
-  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .banner__imgflex {
@@ -476,23 +478,47 @@ body::before {
 }
 @media (max-width: 768px) {
   .banner__imgflex-768 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 34px;
+         column-gap: 34px;
+    padding-bottom: 0px;
   }
 }
 .banner__img_cont::before {
   content: "";
   display: block;
-  padding-top: 100%;
+  padding-top: 120%;
 }
 .banner__img_cont {
   position: relative;
   border: 1px solid white;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   overflow: hidden;
 }
+.banner__img_cont-768 {
+  position: relative;
+  border: 1px solid white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner__img_cont-768::before {
+  content: "";
+  display: block;
+  padding-top: 120%;
+}
 .banner__img {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+}
+.banner__img-768 {
   position: absolute;
   left: 0%;
   top: 0%;

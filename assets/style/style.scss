@@ -124,6 +124,10 @@ body{
                     width: 104px;
                     height: 54px;
                 }
+                @media(max-width:836px){
+                    max-width: 200px; 
+                    max-height: 100px;
+                }
             }
         }
         &_icons{
@@ -131,7 +135,7 @@ body{
         column-gap: 30px;
 
         @media (max-width:1440px){
-            column-gap: 21px;
+            column-gap: 10px;
         }
         }
     }
@@ -207,10 +211,11 @@ body{
                 border-radius: 18.712px;
             }
             @media(max-width:1033px){
-                max-width: 100px;
+                max-width: 150px;
+                width: auto;
             }
-            @media(max-width:1033px){
-                max-width: 312px;
+            @media(max-width:836px){
+                max-width: 120px;
             }
         }
     }
@@ -303,8 +308,6 @@ body{
     border-top: 1px solid white;
     background-color: rgba(0, 0, 0, 0.5);
     &__img{
-        max-width: 267px;
-        max-height: 245px;
          @media(max-width: 1440px){
             max-width: 208px;
             max-height: 215px;
@@ -351,11 +354,10 @@ body{
         }
     }
     &__imgflex{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
         column-gap: 60px;
-        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
         @media(max-width:768px){
             display: none;
         }
@@ -369,29 +371,56 @@ body{
                 display: none;
             }
             @media(max-width: 768px){
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 26px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 34px;
+            padding-bottom: 0px;
             }
         }
     }
     &__img_cont::before{
         content: '';
         display: block;
-        padding-top: 100%;
+        padding-top: 120%;
     }
     &__img_cont{
         position: relative;
         border: 1px solid white;
-        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         overflow: hidden;
+
+
+        &-768{
+            position: relative;
+            border: 1px solid white;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        &-768::before{
+            content: '';
+            display: block;
+            padding-top: 120%;
+        }
+
     }
+
     &__img{
         position: absolute;
         left: 0%;
         top: 0%;
         height: 100%;
         width: 100%;
+
+        &-768{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        }
     }
 }
 .header__768px{
