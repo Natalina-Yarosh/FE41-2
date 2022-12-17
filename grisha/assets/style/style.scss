@@ -21,23 +21,23 @@
     }
 }
 body{
-    background-image: url(grisha/assets/imgs/bg/background_1920.png);
+    background-image: url(/grisha/assets/imgs/bg/background_1920.png);
     background-size: cover;
     background-position: center;
 
     @media (max-width:1440px) {
-        background-image: url(grisha/assets/imgs/bg/background_1440.png);
+        background-image: url(/grisha/assets/imgs/bg/background_1440.png);
         background-size: cover;
     background-position: center;
     }
 
     @media (max-width:768px) {
-        background-image: url(grisha/assets/imgs/bg/background_768.png);
+        background-image: url(/grisha/assets/imgs/bg/background_768.png);
         background-size: cover;
     background-position: center;
     }
     @media(max-width:320px){
-        background-image: url(grisha/assets/imgs/bg/background_320.png);
+        background-image: url(/grisha/assets/imgs/bg/background_320.png);
         background-size: cover;
     background-position: center;
     }

@@ -29,27 +29,27 @@
 }
 
 body {
-  background-image: url(/assets/imgs/bg/background_1920.png);
+  background-image: url(/grisha/assets/imgs/bg/background_1920.png);
   background-size: cover;
   background-position: center;
 }
 @media (max-width: 1440px) {
   body {
-    background-image: url(/assets/imgs/bg/background_1440.png);
+    background-image: url(/grisha/assets/imgs/bg/background_1440.png);
     background-size: cover;
     background-position: center;
   }
 }
 @media (max-width: 768px) {
   body {
-    background-image: url(/assets/imgs/bg/background_768.png);
+    background-image: url(/grisha/assets/imgs/bg/background_768.png);
     background-size: cover;
     background-position: center;
   }
 }
 @media (max-width: 320px) {
   body {
-    background-image: url(/assets/imgs/bg/background_320.png);
+    background-image: url(/grisha/assets/imgs/bg/background_320.png);
     background-size: cover;
     background-position: center;
   }
