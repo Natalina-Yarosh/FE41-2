@@ -35,6 +35,9 @@
   font-family: "AvantGarde";
   border: 1px solid #ED8E00;
 }
+.streetwear__btn_link {
+  text-decoration: none;
+}
 .streetwear__btn:hover {
   border: 1px solid #D9D9D9;
   background-color: #ED8E00;

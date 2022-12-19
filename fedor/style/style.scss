@@ -33,6 +33,10 @@
     margin-bottom:200px;
     font-family: "AvantGarde";
     border: 1px solid #ED8E00;
+    
+    &_link{
+        text-decoration: none;
+    }
 
 &:hover{
     border: 1px solid #D9D9D9;
