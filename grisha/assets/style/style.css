@@ -28,6 +28,32 @@
   }
 }
 
+.aside-1980 {
+  width: 630px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 8px solid #ED8E00;
+  border-top-left-radius: 50px;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(-100%);
+  top: 0;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 224px;
+}
+.aside-1980__h2 {
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 93px;
+  font-family: "AvantGarde";
+  color: #ED8E00;
+  text-transform: uppercase;
+  margin-left: 51px;
+  margin-bottom: 128px;
+}
+
 body {
   background-image: url(/grisha/assets/imgs/bg/background_1920.png);
   background-size: cover;
@@ -625,4 +651,9 @@ body::before {
     width: 60px;
     height: 40px;
   }
+}
+
+.header__links-aside {
+  color: #ED8E00;
+  z-index: 2;
 }/*# sourceMappingURL=style.css.map */
