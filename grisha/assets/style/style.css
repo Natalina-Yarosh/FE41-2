@@ -36,7 +36,7 @@
   border: 8px solid #ED8E00;
   border-top-left-radius: 50px;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   transform: translateX(-100%);
   top: 0;
   left: 100%;
