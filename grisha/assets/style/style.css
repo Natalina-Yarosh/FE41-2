@@ -151,6 +151,7 @@
     -moz-column-gap: 31px;
          column-gap: 31px;
     margin-bottom: 19px;
+    justify-content: center;
   }
 }
 .aside-1980__img {
@@ -214,6 +215,11 @@
     margin-bottom: 100px;
   }
 }
+@media (max-width: 1571px) {
+  .aside-1980__logo {
+    margin-bottom: 90px;
+  }
+}
 @media (max-width: 1510px) {
   .aside-1980__logo {
     margin-bottom: 80px;
@@ -221,7 +227,52 @@
 }
 @media (max-width: 1465px) {
   .aside-1980__logo {
+    margin-bottom: 79px;
+  }
+}
+@media (max-width: 1204px) {
+  .aside-1980__logo {
     margin-bottom: 70px;
+  }
+}
+@media (max-width: 1166px) {
+  .aside-1980__logo {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1113px) {
+  .aside-1980__logo {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1109px) {
+  .aside-1980__logo {
+    margin-bottom: 95px;
+  }
+}
+@media (max-width: 1079px) {
+  .aside-1980__logo {
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 1036px) {
+  .aside-1980__logo {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 995px) {
+  .aside-1980__logo {
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 983px) {
+  .aside-1980__logo {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 853px) {
+  .aside-1980__logo {
+    margin-bottom: 170px;
   }
 }
 
